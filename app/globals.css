@@ -3,7 +3,20 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black  min-h-screen;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/spaceTwoOne.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-weight: bolder;
 }
 
 @layer utilities {
