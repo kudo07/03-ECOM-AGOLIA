@@ -1,7 +1,7 @@
 'use client';
 
 import { AuthCard } from './auth-card';
-
+import { zodResolver } from '@hookform/resolvers/zod';
 export const LoginForm = () => {
   return (
     <AuthCard
@@ -10,7 +10,7 @@ export const LoginForm = () => {
       backButtonLabel="Create a New Account"
       showSocials
     >
-      <div>Hey</div>
+      <div> </div>
     </AuthCard>
   );
 };

@@ -1,28 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { LOADIPHLPAPI } from 'dns/promises';
-import {
-  Darker_Grotesque,
-  David_Libre,
-  Dawning_of_a_New_Day,
-  Delius_Unicase,
-  Diplomata,
-  Diplomata_SC,
-  DM_Serif_Text,
-  GFS_Didot,
-  Great_Vibes,
-  Irish_Grover,
-  La_Belle_Aurore,
-  Noto_Sans_Bassa_Vah,
-  Vazirmatn,
-  Vibur,
-  Vidaloka,
-  VT323,
-  Yarndings_12_Charted,
-  Yarndings_20_Charted,
-  Yeon_Sung,
-  Yuji_Hentaigana_Akebono,
-} from 'next/font/google';
+import { La_Belle_Aurore, Yeon_Sung } from 'next/font/google';
 
 const font = La_Belle_Aurore({
   subsets: ['latin'],
@@ -45,7 +23,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           <div className="text-center lg:text-left lg:ml-44 hidden lg:block relative ">
             <Button
               className={cn(
-                ' bg-gradient-to-b from-pink-500 via-pink-600 to-pink-900 text-transparent inline-block bg-clip-text lg:text-5xl lg:p-12 lg:-ml-12',
+                ' bg-gradient-to-b from-rose-500 via-rose-600 to-rose-900 text-transparent inline-block bg-clip-text lg:text-5xl lg:p-12 lg:-ml-12',
                 font1.className
               )}
             >

@@ -23,11 +23,11 @@ export const AuthCard = ({
   showSocials,
 }: CardWrapperProps) => {
   return (
-    <Card>
+    <Card className="bg-inherit bg-gradient-to-b from-white via-gray-500 to-gray-900 text-transparent inline-block bg-clip-text">
       <CardHeader>
         <CardTitle>{cardTitle}</CardTitle>
       </CardHeader>
-      <CardContent>{children}</CardContent>
+      <CardContent className="bg-none">{children}</CardContent>
       {showSocials && (
         <CardFooter>
           <Socials />
