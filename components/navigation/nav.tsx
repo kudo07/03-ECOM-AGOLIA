@@ -16,7 +16,10 @@ export default async function Nav() {
           </li>
           {!session ? (
             <li>
-              <Button asChild className="bg-inherit text-pink-500">
+              <Button
+                asChild
+                className="bg-inherit hover:bg-inherit text-pink-500"
+              >
                 <Link href="/auth/login" className="flex gap-2">
                   <LogIn className="bg-none" size={16} /> <span>Login</span>
                 </Link>
